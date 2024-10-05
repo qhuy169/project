@@ -1,0 +1,297 @@
+@media (min-width: 1201px) {
+
+    #st-bt{
+        background-color: rgb(240, 242, 242);
+        position: relative;
+        height: 121.125rem;
+    }
+    .item{
+        background-color: #fff;
+        position: absolute;
+        width: 1280px;
+        height: 1830px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 4%;
+    }
+    .item h2{
+        text-align: center;
+        font-family: 'Gotham-Ultra';
+        text-transform: uppercase;
+        margin-top: 40px;
+        position: relative;
+    }
+    .item h2::after{
+        content: '';
+        position: absolute;
+        top: 100%; /* Sửa thành 100% để nó nằm ngay dưới tiêu đề */
+        width: 155px;
+        height: 8px; /* Thêm chiều cao để hiển thị */
+        background-color: #bd945f;
+        left: 50%; /* Đặt về giữa */
+        transform: translateX(-50%); 
+    }
+    .item .list-item{
+        width: 1174px;
+        margin: 45px 52px 96px 52px;
+        display: grid;
+        column-gap: 38px;
+        row-gap: 25px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .item-img-p{
+        width: 370px;
+        height: 520px;
+    }
+    .item-img-p h3{
+        font-family: 'Gotham-Ultra';
+        text-transform: uppercase;
+        color: #bd945f;
+        font-size: 19px;
+        text-align: justify;
+        margin-top: 25px;
+    }
+    .item-img-p p{
+        font-size: 14.7px;
+        text-align: justify;
+        line-height: 1.2;
+    }
+    .page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+        position: absolute;
+        bottom: 1.5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .page button {
+        background-color: #f0f0f0;
+        color: #fff;
+        padding: 5px 10px;
+        margin: 0 3px;
+        cursor: pointer;
+        font-size: 10px;
+        transition: background-color 0.3s;
+        border: none;
+    }
+    
+    .page button:hover {
+        background-color: #bd945f;
+        color: #000;
+    }
+    
+    .page button:focus {
+        outline: none;
+    }
+    
+    .page button.activebt {
+        background-color: #bd945f;
+        color: #000;
+    }
+}
+@media (max-width: 767px) {
+    #st-bt {
+        background-color: rgb(240, 242, 242);
+        position: relative;
+        padding-bottom: 20px; /* Tạo khoảng cách dưới cùng */
+    }
+
+    .item {
+        background-color: #fff;
+        position: relative;
+        width: 90%; /* Điều chỉnh để chiếm 90% chiều rộng màn hình */
+        margin: auto;
+        padding: 10px;
+    }
+
+    .item h2 {
+        text-align: center;
+        font-family: 'Gotham-Ultra';
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-size: 24px; /* Giảm kích thước font */
+        position: relative;
+    }
+
+    .item h2::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        width: 100px; /* Giảm chiều rộng thanh gạch chân */
+        height: 5px; /* Giảm chiều cao của thanh gạch chân */
+        background-color: #bd945f;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .item .list-item {
+        display: flex;
+        flex-direction: column; /* Chuyển các mục sang dạng cột */
+        row-gap: 20px; /* Khoảng cách giữa các mục */
+        margin-top: 20px;
+    }
+
+    .item-img-p {
+        width: 100%;
+        height: auto; /* Tự động điều chỉnh chiều cao */
+        text-align: center;
+    }
+
+    .item-img-p img {
+        width: 100%; /* Hình ảnh chiếm toàn bộ chiều rộng */
+        height: auto;
+    }
+
+    .item-img-p h3 {
+        font-family: 'Gotham-Ultra';
+        text-transform: uppercase;
+        color: #bd945f;
+        font-size: 18px; /* Giảm kích thước font */
+        text-align: justify;
+        margin-top: 15px;
+        padding: 0 10px;
+    }
+
+    .item-img-p p {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    .page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .page button {
+        background-color: #f0f0f0;
+        color: #fff;
+        padding: 5px 10px;
+        margin: 0 3px;
+        cursor: pointer;
+        font-size: 12px; /* Điều chỉnh kích thước chữ */
+        transition: background-color 0.3s;
+        border: none;
+    }
+
+    .page button:hover {
+        background-color: #bd945f;
+        color: #000;
+    }
+
+    .page button.activebt {
+        background-color: #bd945f;
+        color: #000;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    #st-bt {
+        background-color: rgb(240, 242, 242);
+        position: relative;
+        padding-bottom: 40px; /* Tạo khoảng cách phía dưới */
+        height: auto;
+    }
+
+    .item {
+        background-color: #fff;
+        width: 90%; /* Điều chỉnh để phù hợp với màn hình vừa */
+        margin: auto;
+        padding: 20px; /* Thêm padding để tạo khoảng cách giữa nội dung và viền */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo bóng cho khung nội dung */
+    }
+
+    .item h2 {
+        text-align: center;
+        font-family: 'Gotham-Ultra';
+        text-transform: uppercase;
+        margin-top: 30px;
+        font-size: 28px; /* Giảm nhẹ kích thước font */
+        position: relative;
+    }
+
+    .item h2::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        width: 120px; /* Giảm chiều rộng thanh gạch chân */
+        height: 6px; /* Điều chỉnh chiều cao thanh */
+        background-color: #bd945f;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .item .list-item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Sắp xếp theo dạng lưới với 2 cột */
+        column-gap: 30px; /* Tạo khoảng cách giữa các cột */
+        row-gap: 30px; /* Khoảng cách giữa các hàng */
+        margin-top: 30px;
+    }
+
+    .item-img-p {
+        width: 100%;
+        height: auto;
+    }
+
+    .item-img-p img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px; /* Bo tròn các góc hình ảnh */
+    }
+
+    .item-img-p h3 {
+        font-family: 'Gotham-Ultra';
+        text-transform: uppercase;
+        color: #bd945f;
+        font-size: 20px; /* Kích thước chữ vừa phải */
+        text-align: justify;
+        margin-top: 15px;
+        padding: 0 10px; /* Thêm padding để văn bản không sát mép */
+    }
+
+    .item-img-p p {
+        font-size: 16px;
+        text-align: justify;
+        line-height: 1.4;
+        padding: 0 10px; /* Thêm padding cho đoạn văn */
+    }
+
+    .page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .page button {
+        background-color: #f0f0f0;
+        color: #fff;
+        padding: 8px 12px; /* Tăng kích thước cho các nút */
+        margin: 0 5px; /* Thêm khoảng cách giữa các nút */
+        cursor: pointer;
+        font-size: 14px; /* Điều chỉnh kích thước chữ cho các nút */
+        transition: background-color 0.3s;
+        border: none;
+    }
+
+    .page button:hover {
+        background-color: #bd945f;
+        color: #000;
+    }
+
+    .page button:focus {
+        outline: none;
+    }
+
+    .page button.activebt {
+        background-color: #bd945f;
+        color: #000;
+    }
+}
+

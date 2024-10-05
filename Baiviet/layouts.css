@@ -1,0 +1,320 @@
+@media (min-width: 1201px) {
+#sn-btw1{
+    background-color: rgb(240, 242, 242);
+    position: relative;
+    width: 100%;
+    height: 51.875rem;
+}
+.bl1{
+    display: flex;
+    width: 80%;
+    height: 80px;
+    position: absolute;
+    left: 17%;
+}
+.bl1>.fp{
+    padding: 30px 15px 15px 15px;
+    color: #bd945f;
+    margin-left: 35px;
+}
+.bl1>.lp{
+    padding: 30px 15px 15px 15px;
+    color: #bd945f;
+}
+.bl1>span, .bl1>p{
+    font-size: 13px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.bl2{
+    display: flex;
+    width: 65.3%;
+    height: 675px;
+    position: absolute;
+    left: 17%;
+    top: 10%;
+    background-color: #fff;
+}
+.bl2-1{
+    position: absolute;
+    width: 790px;
+    height: 570px;
+    top: 5%;
+    left: 4%;
+}
+.bl2-1>h2{
+    text-transform: uppercase;
+    font-family: 'Gotham-Ultra';
+    color: #bd945f;
+    margin-bottom: 30px;
+    font-size: 24px ;
+    text-align: justify;
+}
+.bl2-1>.p1{
+    margin-bottom: 15px;
+    font-size: 17.5px;
+    text-align: justify;
+}
+.bl2-1>.p2{
+    margin-bottom: 15px;
+    font-size: 15.5px;
+    text-align: justify;
+}
+.bl2-1>img{
+    margin-top: 15px;
+    width: 790px;
+}
+.bl2-2{
+    position: absolute;
+    width: 338px;
+    height: 480px;
+    top: 6%;
+    left: 73%;
+}
+.bl2-2>h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.bl2-2>h2::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    transform: translateX(-50%);
+    left: 10%;
+    height: 4px;
+    width: 69px;
+    background-color: #bd945f;
+    display: block;
+}
+.bl2-2 .item-img-p{
+    display: flex;
+    margin-bottom: 32px;
+}
+.bl2-2 .item-img-p img{
+    margin-right: 30px;
+}
+.bl2-2 .item-img-p p{
+    text-transform: uppercase;
+    width: 155px;
+    font-size: 13px;
+    text-align: justify;
+    color: #4b4c56;
+}
+}
+@media (max-width: 767px) {
+    #sn-btw1 {
+        background-color: rgb(240, 242, 242);
+        padding: 15px;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .bl1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px 0;
+    }
+
+    .bl1 > p, .bl1 > span {
+        font-size: 14px;
+        padding: 10px;
+        color: #bd945f;
+        margin: 0 5px;
+    }
+
+    .bl2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        height: auto;
+        background-color: transparent;
+        margin-top: 20px;
+    }
+
+    .bl2-1 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .bl2-1 > h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .bl2-1 > .p1, .bl2-1 > .p2 {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .bl2-1 > img {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .bl2-2 {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .bl2-2 > h2 {
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    .bl2-2 > h2::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 60px;
+        background-color: #bd945f;
+    }
+
+    .bl2-2 .item-img-p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .bl2-2 .item-img-p img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .bl2-2 .item-img-p p {
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        color: #4b4c56;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    #sn-btw1 {
+        background-color: rgb(240, 242, 242);
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .bl1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 90%;
+        height: auto;
+        position: relative;
+        left: 5%;
+        padding: 15px 0;
+    }
+
+    .bl1 > p, .bl1 > span {
+        font-size: 15px;
+        padding: 10px;
+        color: #bd945f;
+        margin: 0 10px;
+    }
+
+    .bl2 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        position: relative;
+        height: auto;
+        background-color: #fff;
+        left: 5%;
+        margin-top: 20px;
+    }
+
+    .bl2-1 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .bl2-1 > h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .bl2-1 > .p1, .bl2-1 > .p2 {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .bl2-1 > img {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .bl2-2 {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .bl2-2 > h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    .bl2-2 > h2::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 65px;
+        background-color: #bd945f;
+    }
+
+    .bl2-2 .item-img-p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .bl2-2 .item-img-p img {
+        width: 45%;
+        height: auto;
+    }
+
+    .bl2-2 .item-img-p p {
+        font-size: 15px;
+        text-align: justify;
+        width: 50%;
+        text-transform: uppercase;
+        color: #4b4c56;
+    }
+}
+
+

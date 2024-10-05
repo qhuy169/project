@@ -1,0 +1,597 @@
+@media (min-width: 1201px) {
+.bnr{
+    background-image: url(./AnhCat/SANPHAM.jpg);
+    height: 33.75rem;
+    position: relative;
+}
+.next, .prev {
+    background-color: #c1beba;
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.next{
+    right: 14%;
+}
+.prev{
+    left: 14%;
+}
+.bnr h1{
+    font-family: 'SVN-Helga';
+    font-size: 80px;
+    color: #bd945f;
+    position: absolute;
+    left: 57%;
+    top: 30%;
+}
+.bnr h2{
+    position: absolute;
+    left: 62%;
+    top: 45%;
+    color: #2c2e53;
+    font-size: 34px;
+}
+.bnr .buy-now{
+    height: 50px;
+    width: 186px;
+    font-size: 20px;
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    border: none;
+    color: #2c2e53;
+}
+.page-bn{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.page-bn div{
+    background-color: #fff;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.page-bn div:first-child{
+    background-color: #bd945f;
+}
+.st-bt2 {
+    background-color: #c1beba;
+    position: relative;
+    padding: 20px 0; /* Tạo khoảng cách bên trên và dưới */
+}
+
+.item-prod {
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 70px;
+    padding: 20px; /* Tạo khoảng cách trong phần tử */
+    position: relative; /* Để nội dung bên trong không bị ảnh hưởng bởi `absolute` */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo bóng mờ để tách biệt với nền */
+    margin-bottom: 65px;
+}
+.item-prod:first-child{
+    margin-top: 120px;
+}
+.item-h{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.item-h h2{
+    position: absolute;
+    font-family: 'Gotham-Ultra';
+    margin-left: 30px;
+    text-transform: uppercase;
+    width: 250px;
+}
+.item-h h2::after{
+    content: '';
+    position: absolute;
+    transform: translateX(-50%);
+    height: 8px;
+    width: 160px;
+    background-color: #bd945f;
+    display: block;
+    left: 32%;
+}
+.item-h h3{
+    position: absolute;
+    font-size: 20px;
+    text-transform: uppercase;
+    right: 0;
+    margin-right: 30px;
+    padding-top: 30px;
+    
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px; /* Tạo khoảng cách với tiêu đề */
+}
+
+.product-card {
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 10px; /* Tạo khoảng cách giữa các thẻ */
+    padding: 10px;
+    background-color: #fff;
+    line-height: 1.2;
+}
+
+.product-image img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.product-info h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Gotham-Ultra';
+    margin: 0;
+    color: #2c2e53;
+}
+
+.rating {
+    color: #FFD700;
+    font-size: 25px;
+    height: 30px;
+}
+
+.product-info p {
+    color: #555;
+    margin: 0;
+    font-size: 15px;
+}
+
+.price {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+}
+@media (max-width: 767px) {
+    .bnr {
+        background-image: url(./AnhCat/SANPHAM.jpg);
+        height: 25rem;
+        position: relative;
+    }
+
+    .next, .prev {
+        background-color: #c1beba;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-size: 18px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .next {
+        right: 10%;
+    }
+
+    .prev {
+        left: 10%;
+    }
+
+    .bnr h1 {
+        font-family: 'SVN-Helga';
+        font-size: 40px;
+        color: #bd945f;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .bnr h2 {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        color: #2c2e53;
+        font-size: 20px;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .bnr .buy-now {
+        height: 40px;
+        width: 150px;
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: none;
+        color: #2c2e53;
+    }
+
+    .page-bn {
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+
+    .page-bn div {
+        background-color: #fff;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+
+    .page-bn div:first-child {
+        background-color: #bd945f;
+    }
+
+    .st-bt2 {
+        background-color: #c1beba;
+        padding: 10px 0;
+    }
+
+    .item-prod {
+        background-color: #fff;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .item-prod:first-child {
+        margin-top: 80px;
+    }
+
+    .item-h {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .item-h h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .item-h h2::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 5px;
+        width: 120px;
+        background-color: #bd945f;
+        bottom: -10px;
+    }
+
+    .item-h h3 {
+        font-size: 14px;
+        text-transform: uppercase;
+        padding-top: 10px;
+        margin: auto;
+    }
+
+    .product-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #fff;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-info h4 {
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: 10px 0;
+    }
+
+    .rating {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .product-info p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .price {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #2c2e53;
+    }
+
+    .footer-div {
+        margin-bottom: 20px;
+    }
+
+    .footer-div p {
+        color: white;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .icon-category {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon-category p {
+        margin: 0 10px;
+    }
+
+    .icon-category i {
+        font-size: 25px;
+        color: white;
+    }
+
+    .footer-div img {
+        width: 100px;
+        margin-top: 15px;
+        display: block;
+        margin: auto;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .bnr {
+        background-image: url(./AnhCat/SANPHAM.jpg);
+        height: 28rem;
+        position: relative;
+    }
+
+    .next, .prev {
+        background-color: #c1beba;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .next {
+        right: 12%;
+    }
+
+    .prev {
+        left: 12%;
+    }
+
+    .bnr h1 {
+        font-family: 'SVN-Helga';
+        font-size: 60px;
+        color: #bd945f;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .bnr h2 {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        color: #2c2e53;
+        font-size: 28px;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .bnr .buy-now {
+        height: 45px;
+        width: 160px;
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: none;
+        color: #2c2e53;
+    }
+
+    .page-bn {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+
+    .page-bn div {
+        background-color: #fff;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .page-bn div:first-child {
+        background-color: #bd945f;
+    }
+
+    .st-bt2 {
+        background-color: #c1beba;
+        padding: 15px 0;
+    }
+
+    .item-prod {
+        background-color: #fff;
+        width: 85%;
+        margin: auto;
+        margin-bottom: 50px;
+        padding: 20px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .item-prod:first-child {
+        margin-top: 100px;
+    }
+
+    .item-h {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    .item-h h2 {
+        font-size: 28px;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    .item-h h2::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 5px;
+        width: 130px;
+        background-color: #bd945f;
+        bottom: -10px;
+    }
+
+    .item-h h3 {
+        font-size: 18px;
+        text-transform: uppercase;
+        padding-top: 15px;
+        margin: auto;
+    }
+
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .product-card {
+        width: 45%;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #fff;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-info h4 {
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 10px 0;
+    }
+
+    .rating {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .product-info p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .price {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+        background-color: #2c2e53;
+    }
+
+    .footer-div {
+        width: 30%;
+    }
+
+    .footer-div p {
+        color: white;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .icon-category {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .icon-category p {
+        margin: 0 15px 0 0;
+    }
+
+    .icon-category i {
+        font-size: 28px;
+        color: white;
+    }
+
+    .footer-div img {
+        width: 120px;
+        margin-top: 20px;
+    }
+}
